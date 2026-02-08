@@ -4,4 +4,6 @@
 # COMMON VARIABLES
 #=================================================
 
-phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+# PHP version will be set by YunoHost based on manifest
+YNH_PHP_VERSION="${YNH_DEFAULT_PHP_VERSION:-8.2}"
+phpversion="$YNH_PHP_VERSION"
